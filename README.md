@@ -25,13 +25,13 @@ python3 build.py
 ```
 Train model
 ```bash
-python3 train.py --lr 1e-3
-python3 train.py --model <path to model> --start 40 --lr 1e-4
-python3 train.py --model <path to model> --start 60 --lr 1e-5
+python3 train.py --lr 1e-3 --epochs 50
+python3 train.py --model <path to model> --start 40 --lr 1e-4 --epochs 30
+python3 train.py --model <path to model> --start 60 --lr 1e-5 --epochs 10
 ```
-Setup config file to model 
+Setup config file to model
 
-Test model 
+Test model
 ```bash
 python3 test.py
 ```

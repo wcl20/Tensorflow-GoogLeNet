@@ -21,6 +21,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, default=None, help="Path to specific model")
     parser.add_argument("--start", type=int, default=0, help="Epoch to restart training")
+    parser.add_argument("--epochs", type=int, default=50, help="Number of epochs to train")
     parser.add_argument("--lr", type=float, default=1e-3, help="Learning rate")
     args = parser.parse_args()
 
@@ -79,7 +80,7 @@ def main():
 
     model.fit(
         train_gen.generator(),
-        epochs=30,
+        epochs=args.epochs,
         steps_per_epoch=train_gen.num_images // 64,
         validation_data=valid_gen.generator(),
         validation_steps=valid_gen.num_images // 64,

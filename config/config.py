@@ -17,7 +17,7 @@ VALID_PATH = "../datasets/tiny-imagenet/hdf5/valid.hdf5"
 TEST_PATH = "../datasets/tiny-imagenet/hdf5/test.hdf5"
 
 OUTPUT_PATH = "output"
-MODEL_PATH = "output/checkpoints/epoch_50.hdf5"
+MODEL_PATH = "output/checkpoints/epoch_70.hdf5"
 MEAN_PATH = "output/mean.json"
 FIG_PATH = "output/training.png"
 JSON_PATH = "output/training.json"

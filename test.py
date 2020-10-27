@@ -26,8 +26,8 @@ def main():
     preds = model.predict(test_gen.generator(epochs=1), steps=test_gen.num_images // 64, max_queue_size=10)
 
     rank1, rank5 = accuracy(preds, test_gen.db["labels"])
-    print(f"[INFO] Rank-1 accuracy: {rank1:.2f}")
-    print(f"[INFO] Rank-5 accuracy: {rank5:.2f}")
+    print(f"[INFO] Rank-1 accuracy: {rank1 * 100:.2f}")
+    print(f"[INFO] Rank-5 accuracy: {rank5 * 100:.2f}")
     test_gen.close()
 
 if __name__ == '__main__':
