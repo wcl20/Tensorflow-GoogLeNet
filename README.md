@@ -1,4 +1,4 @@
-# Tensorflow GoogLeNet
+# Tensorflow MiniGoogLeNet
 
 Trained a variant of GoogLeNet model on Tiny ImageNet dataset.
 
